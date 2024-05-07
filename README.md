@@ -14,6 +14,14 @@ eval $(minikube docker-env)
 ```
 Then to be able to use the images that will be created internally in minikube, you will need to run the command below to enable docker.
 
+```bash
+npm init -y
+npm install express
+npm install pg
+node server.js
+```
+
+
 
 ## 2. Setting up bookings
 
