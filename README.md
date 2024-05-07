@@ -26,6 +26,7 @@ docker build -t booking-service booking-service/.
 Then you need to apply all of the Kubernetes files to be able to run the site:
 
 ```bash
+kubectl apply -f booking-service/secret.yml
 kubectl apply -f booking-service/booking-service-deployment.yml
 kubectl apply -f booking-service/booking-service-service.yml
 kubectl apply -f booking-service/postgres-deployment.yml
